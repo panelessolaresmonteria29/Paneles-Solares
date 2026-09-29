@@ -1,0 +1,72 @@
+:root {
+  --color-fondo: #355C5D;
+  --color-fondo-secundario: #F4EFE6;
+  --color-primario: #355C5D;
+  --color-titulos: #2d2a26;
+  --color-secundario: #D6A284;
+  --color-parrafos: #1F1717;
+  --fuente-moderna: system-ui, -apple-system, sans-serif;
+  --fuente-elegante: 'Georgia', serif;
+  font-family: var(--fuente-moderna);
+}
+.centrar-items{
+  align-items: center;
+}
+.boton {
+  padding: 18px 32px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+  flex: 1;
+}
+.boton-secundario{
+  background-color: var(--color-secundario);
+  color: white;
+}
+
+.boton-blanco{
+  border: 1px solid white;
+  color: white;
+}
+.contenedor-seccion{
+  max-width: 1280px;
+  margin: auto;
+}
+.cuadricula{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:30px;
+}
+.col-span-5{
+  grid-column: span 5;
+}
+.col-span-7{
+  grid-column: span 7;
+}
+.cursiva{
+  font-style: italic;
+}
+.text-secundario{
+  color: var(--color-secundario);
+}
+.fuente-elegante{
+font-family: var(--fuente-elegante);
+}
+.fondo-principal{
+  color:white;
+  background-color: var(--color-fondo);
+}
+@media (max-width: 840px) {
+  .cuadricula {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .col-span-5,
+  .col-span-7 {
+    grid-column: span 1;
+  }
+}

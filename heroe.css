@@ -1,0 +1,71 @@
+/* 1. La sección principal */
+.seccion-heroe {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+/* 2. El contenedor flexible que agrupa texto e imagen */
+.contenedor-heroe {
+  display: flex;
+  flex-direction: column; /* Móvil por defecto: texto arriba, imagen abajo */
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+}
+
+/* 3. Columna de texto */
+.contenedor-texto {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-sizing: border-box;
+}
+
+.contenedor-boton {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Evita que los botones rompan el ancho */
+}
+
+/* 4. Contenedor de la imagen */
+.heroe-imagen-contenedor {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.heroe-imagen {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+}
+
+/* 5. Escritorio: dos columnas una al lado de la otra */
+@media (min-width: 768px) {
+  .contenedor-heroe {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .contenedor-texto,
+  .heroe-imagen-contenedor {
+    width: 50%;
+  }
+}
