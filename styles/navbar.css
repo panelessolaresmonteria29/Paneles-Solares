@@ -16,7 +16,7 @@ html {
   width: 100%;
   height: 70px;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(53, 92, 93, 0.88) 0%, rgba(53, 92, 93, 0.35) 65%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0) 100%);
   
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: none;
@@ -26,7 +26,8 @@ html {
 
 /* Estado cuando el usuario hace scroll hacia abajo pasando el Hero */
 .navbar.navbar-scrolled {
-  background: #0f172a !important;
+  background: rgba(16, 42, 67, 0.78) !important;
+  background: color-mix(in srgb, var(--color-primario, #102A43) 78%, transparent) !important;
   background-image: none !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -90,7 +91,7 @@ html {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #D6A284;
+  background-color: #F5B700;
   transition: width 0.3s ease;
 }
 
@@ -100,7 +101,7 @@ html {
 
 /* Enlace estilo botón de acción (opcional) */
 .nav-link-btn {
-  background-color: #D6A284;
+  background-color: #F5B700;
   color: #ffffff !important;
   padding: 0.45rem 1.15rem !important;
   border-radius: 9999px;
@@ -177,7 +178,8 @@ html {
     left: 0;
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: #0f172a;
+    background-color: rgba(16, 42, 67, 0.9);
+    background-color: color-mix(in srgb, var(--color-primario, #102A43) 90%, transparent);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     flex-direction: column;

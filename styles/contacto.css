@@ -100,7 +100,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--color-secundario, #d6a284);
+  color: var(--color-secundario, #F5B700);
   background-color: rgba(214, 162, 132, 0.15);
   padding: 0.35rem 0.9rem;
   border-radius: 9999px;
@@ -187,7 +187,7 @@
   font-family: inherit;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
-  background-color: var(--fondo-secundario, #f9f8f5);
+  background-color: var(--color-fondo-secundario, #F5F8FA);
   color: #111827;
   transition: border-color 0.2s, box-shadow 0.2s;
   outline: none;
@@ -195,7 +195,7 @@
 
 .campo-grupo input:focus,
 .campo-grupo textarea:focus {
-  border-color: var(--color-secundario, #d6a284);
+  border-color: var(--color-secundario, #F5B700);
   box-shadow: 0 0 0 3px rgba(214, 162, 132, 0.25);
   background-color: #ffffff;
 }
@@ -210,7 +210,7 @@
   font-weight: 700;
   font-family: inherit;
   color: var(--color-blanco, #ffffff);
-  background-color: var(--color-secundario, #d6a284);
+  background-color: var(--color-secundario, #F5B700);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -266,7 +266,7 @@
 
 .tarjeta-info-item:hover {
   transform: translateY(-2px);
-  border-color: var(--color-secundario, #d6a284);
+  border-color: var(--color-secundario, #F5B700);
   box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -285,7 +285,7 @@
   height: 44px;
   border-radius: 8px;
   background-color: rgba(214, 162, 132, 0.18);
-  color: var(--color-secundario, #d6a284);
+  color: var(--color-secundario, #F5B700);
   shrink: 0;
 }
 
@@ -414,6 +414,6 @@
 
 .boton-telefono:hover {
   transform: translateY(-1px);
-  border-color: var(--color-secundario, #d6a284);
+  border-color: var(--color-secundario, #F5B700);
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }

@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="styles/aboutsection.css" />
   <link rel="stylesheet" href="styles/texto.css" />
   <link rel="stylesheet" href="styles/variables.css" />
-  <link rel="stylesheet" href="styles/catalogo.css">
   <link rel="stylesheet" href="styles/contacto.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/detalle-producto.css">
   <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="detalle-producto.css">
+  <link rel="stylesheet" href="styles/catalogo.css">
 </head>
 <body>
   <nav id="barra-navegacion" class="navbar">
   <div class="contenedor-navbar">
-    <a href="#heroe" class="navbar-logo">Paneles-solares_modificado</a>
+    <a href="#heroe" class="navbar-logo">Paneles Solares</a>
     
     <!-- Botón hamburguesa responsive para móviles -->
     <button class="navbar-toggle" id="navbar-toggle" aria-label="Abrir menú" aria-expanded="false">
@@ -35,23 +35,24 @@
     </ul>
   </div>
 </nav>
+  
 <main>
   <section class="fondo-principal seccion-heroe" id="heroe">
-    <div class="cuadricula contenedor-seccion contenedor-heroe">
+    <div class="contenedor-seccion contenedor-heroe">
      <div class="col-span-5 contenedor-texto">
 
-        <h1>Energía que define tu futuro.</h1>
+        <span class="heroe-etiqueta">Energía solar para tu hogar</span>
+        <h1>Paneles <span>Solares</span></h1>
         <p>
-          Creemos en la evolución de los hogares hacia la autosuficiencia.
-          Diseñamos e instalamos sistemas fotovoltaicos de alta eficiencia,
-          seleccionados por su durabilidad excepcional y tecnología avanzada,
-          rindiendo culto al respeto por el entorno.
+          Transforma la luz del sol en energía para tu hogar. Diseñamos e
+          instalamos sistemas solares eficientes y duraderos para ayudarte
+          a reducir tu consumo y dar el siguiente paso hacia la autosuficiencia.
         </p>
         <div class="contenedor-boton">
           <a class="boton boton-secundario" href="#catalogo"
-            >Explorar coleccion</a
+            >Explorar catálogo <span aria-hidden="true">↗</span></a
           >
-          <a class="boton boton-blanco" href="#contacto">contacto</a>
+          <a class="boton boton-blanco" href="#contacto">Contáctanos</a>
         </div>
       </div>
    <div class="col-span-7 heroe-imagen-contenedor">
@@ -93,15 +94,19 @@
   <div class="contenedor-seccion">
     <div class="catalogo-header">
       <span>Colección Exclusiva</span>
-<h2>¡Explora nuestros productos!</h2>
+    
+    
+      <h2>Explora nuestros productos</h2>
+    </div>
+
     <div class="catalogo-contenido cuadricula">
       <div class="catalogo-item">
         <div class="catalogo-imagen">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8drle2sQlIrOmsIyKJSvVw8SPOBbynxq1-ihW2J4FEg&s=10" alt="Foto de mega duper panel solar " />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8drle2sQlIrOmsIyKJSvVw8SPOBbynxq1-ihW2J4FEg&s=10" alt="Foto de mega duper panel solar" />
         </div>
         <div class="item-contenido">
           <div class="informacion-producto">
-            <h3>mega duper panel solar </h3>
+            <h3>mega duper panel solar</h3>
             <span class="precio-label">$ 1,000,0000</span>
           </div>
           <p class="producto-descripcion">
@@ -132,17 +137,22 @@
         <div class="item-contenido">
           <div class="informacion-producto">
             <h3>panel city boy</h3>
-            <span class="precio-label">67,676,767</span>
+            <span class="precio-label">67,0000</span>
           </div>
           <p class="producto-descripcion">
             Es un producto bastante popular, tipo osea todo el mundo lo quiere, si quieres cómpralo, no todas las personas lo pueden comprar :vvvv 6767676767
           </p>
         </div>
       </div>
-    </div> 
     </div>
+    
+
+
+  
   </div>
 </section>
+
+  
 
   <section id="contacto" class="seccion-contacto fondo-principal">
   <div class="contenedor-seccion">
@@ -218,8 +228,7 @@
     </div>
   </div>
 </footer>
-
-  <script src="./navbar.js"></script>
   <script src="./detalle-producto.js" defer></script>
+  <script src="./navbar.js"></script>
 </body>
 </html>

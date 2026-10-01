@@ -1,16 +1,18 @@
-@import "variables.css";
+/* =========================================================
+   catalogo.css - Hoja de Estilos de la Sección Catálogo
+   ========================================================= */
+#catalogo .contenedor-seccion {
+  width: 1280px;
+  max-width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
 
 #catalogo {
   padding: 5rem 1.5rem;
   box-sizing: border-box;
-  width: 100%;
-}
-
-.contenedor-seccion {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  background-color: var(--color-fondo) !important;
 }
 
 .catalogo-header {
@@ -42,52 +44,49 @@ section#catalogo .catalogo-header h2 {
   color: #ffffff !important;
 }
 
-/* Cuadrícula */
-.catalogo-contenido,
-.cuadricula {
+#catalogo .catalogo-contenido {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+  gap: 2rem;
   width: 100%;
-  box-sizing: border-box;
-  margin-top: 2rem;
 }
 
 /* Tarjeta de Producto */
 .catalogo-item {
-  width: 100%;
   min-width: 0;
-  box-sizing: border-box;
   display: flex;
-  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  overflow: hidden; /* Corta cualquier desborde hijo */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Contenedor de la imagen con proporción fija segura */
 .catalogo-imagen {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background-color: rgba(45, 42, 38, 0.4);
+  aspect-ratio: 1 / 1;         /* Forza a que el contenedor sea un cuadrado perfecto */
+  flex-shrink: 0;
+  overflow: hidden;            /* Recorta cualquier parte de la imagen que se salga */
+  background-color: rgba(45, 42, 38, 0.4); /* Fondo oscuro con opacidad */
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   margin: 0;
-  box-sizing: border-box;
+  
+  /* Centrado interno */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Imagen fija que no puede salirse del contenedor bajo ninguna circunstancia */
 .catalogo-imagen img {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: cover;           /* Se adapta al cuadrado sin deformarse ni estirarse */
+  object-position: center;     /* Centra el encuadre de la foto */
   display: block;
 }
 
@@ -97,8 +96,6 @@ section#catalogo .catalogo-header h2 {
   flex-direction: column;
   flex-grow: 1;
   gap: 0.75rem;
-  min-width: 0;
-  box-sizing: border-box;
 }
 
 .informacion-producto {
@@ -106,8 +103,8 @@ section#catalogo .catalogo-header h2 {
   justify-content: space-between;
   align-items: baseline;
   gap: 0.5rem;
-  min-width: 0;
   flex-wrap: wrap;
+  min-height: 3rem;
 }
 
 .informacion-producto h3,
@@ -115,11 +112,12 @@ section#catalogo .catalogo-header h2 {
 .item-contenido h3 {
   font-family: var(--fuente-elegante, Georgia, serif) !important;
   font-style: italic !important;
-  font-size: 1.125rem !important;
+  font-size: 1.125rem !important; /* text-lg (18px) */
   margin: 0 !important;
   color: #ffffff !important;
   font-weight: 600 !important;
-  word-break: break-word;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .informacion-producto span,
@@ -132,26 +130,29 @@ section#catalogo .catalogo-header h2 {
 .precio b,
 .catalogo-item .precio-valor,
 .catalogo-item .precio span:last-child {
-  font-family: Georgia, serif !important;
-  font-size: 0.875rem !important;
-  font-weight: 500 !important;
-  color: #a57b64 !important;
+  font-family: Georgia, serif !important; 
+  /* font-serif */
+  font-size: 0.875rem !important;         /* text-sm (14px) */
+  font-weight: 500 !important;            /* font-medium */
+  color: #ffffff !important;
   white-space: nowrap !important;
 }
 
 .producto-descripcion,
 .catalogo-item p {
-  font-size: 1rem !important;
-  text-align: justify !important;
-  font-weight: 400 !important;
-  line-height: 1.625 !important;
-  margin-bottom: 1.5rem !important;
-  color: #cbd5e1 !important;
+  font-size: 1rem !important;                 /* text-base (16px) */
+  text-align: justify !important;             /* text-align: justify */
+  font-weight: 400 !important;                /* font-normal */
+  line-height: 1.625 !important;              /* leading-relaxed */
+  margin: 0 0 24px !important;
+  min-height: 4.875em;
+  overflow-wrap: anywhere;
+  color: #ffffff !important;
+
   display: -webkit-box !important;
-  -webkit-line-clamp: 3 !important;
-  -webkit-box-orient: vertical !important;
-  overflow: hidden !important;
-  word-break: break-word;
+  -webkit-line-clamp: 3 !important;           /* Limita el texto a un máximo de líneas */
+  -webkit-box-orient: vertical !important;    /* Define la orientación del contenedor box */
+  overflow: hidden !important;                /* Oculta el texto que sobrepase las líneas */
 }
 
 .precio {
@@ -175,7 +176,7 @@ section#catalogo .catalogo-header h2 {
 
 .boton-catalogo {
   display: inline-block;
-  background: var(--color-secundario, #d6a284);
+  background: var(--color-secundario, #F5B700);
   color: #0d1117;
   text-decoration: none;
   font-weight: 700;
@@ -190,13 +191,23 @@ section#catalogo .catalogo-header h2 {
   opacity: 0.9;
 }
 
-@media (max-width: 480px) {
-  .catalogo-contenido,
-  .cuadricula {
-    grid-template-columns: 1fr;
+/* Responsivo para tabletas */
+@media (max-width: 850px) {
+  #catalogo .catalogo-contenido {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .catalogo-header h2 {
+/* Responsivo para móviles */
+@media (max-width: 600px) {
+  #catalogo .catalogo-contenido {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+  #catalogo {
+    padding: 3rem 1rem;
+  }
+  #catalogo .catalogo-header h2 {
     font-size: 1.75rem !important;
   }
 }

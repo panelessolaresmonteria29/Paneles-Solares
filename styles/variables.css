@@ -1,9 +1,9 @@
 :root {
-  --color-fondo: #355C5D;
-  --color-fondo-secundario: #F4EFE6;
-  --color-primario: #355C5D;
+  --color-fondo: #102A43;
+  --color-fondo-secundario: #F5F8FA;
+  --color-primario: #102A43;
   --color-titulos: #2d2a26;
-  --color-secundario: #D6A284;
+  --color-secundario: #F5B700;
   --color-parrafos: #1F1717;
   --fuente-moderna: system-ui, -apple-system, sans-serif;
   --fuente-elegante: 'Georgia', serif;

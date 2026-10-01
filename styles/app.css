@@ -11,7 +11,7 @@
    ESTILOS DE SECCIÓN: SOBRE NOSOTROS & MAQUETACIÓN
    ========================================================= */
 .fondo-secundario {
-  background-color: #f9f8f5;
+  background-color: var(--color-fondo-secundario);
   color: #1f2937;
   padding: 4.5rem 1.5rem;
   border-top: 1px solid #e5e7eb;
@@ -83,7 +83,7 @@
   font-style: italic;
   font-family: Georgia, serif;
   font-size: 1rem;
-  border-left: 2px solid #d6a284;
+  border-left: 2px solid #F5B700;
   padding-left: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -173,7 +173,7 @@
   font-weight: normal;
   font-family: Georgia, serif;
   font-size: 1rem;
-  border-left: 2px solid #d6a284;
+  border-left: 2px solid #F5B700;
   padding-left: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
