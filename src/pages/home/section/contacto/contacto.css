@@ -1,10 +1,11 @@
+@import "../../../../styles/variables.css";
 /* =========================================================
    HOJA DE ESTILOS: contacto.css
    Vinculada a variables.css del proyecto escolar
    ========================================================= */
 
 /* Variables de respaldo sincronizadas con la identidad del proyecto escolar */
-@import "variables.css";
+
 
 
 .seccion-contacto,

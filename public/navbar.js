@@ -1,7 +1,7 @@
 // =========================================================
 // SCRIPT INTERACTIVO DEL NAVBAR (Menú móvil responsive y scroll)
 // =========================================================
-document.addEventListener('DOMContentLoaded', () => {
+(function(callback) { callback.call(document, new Event('DOMContentLoaded')); })( () => {
   const navbar = document.getElementById('barra-navegacion') || document.querySelector('.navbar');
   const toggleBtn = document.getElementById('navbar-toggle') || document.querySelector('.navbar-toggle');
   const menu = document.querySelector('.navbar-menu');

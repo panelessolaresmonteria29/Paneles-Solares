@@ -1,9 +1,95 @@
-@import "variables.css";
-@import "texto.css";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import '../../../../styles/variables.css';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sobre-nosotros-contendor {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 4rem;
+  max-width: 1280px;
+  align-items: center;
+  margin: auto;
+}
+
+.sobre-nosotros-seccion {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+
+  background-color: #ffffff;
+  color: var(--piedra-oscuro);
+  border-top: 1px solid var(--piedra-linea);
+  border-bottom: 1px solid var(--piedra-linea);
+}
+.sobre-nosotros-seccion p {
+  font-family: system-ui, -apple-system, sans-serif;
+
+}
+.titulo-sobre-nosotros {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0 0 2rem 0;
+}
+.descripcion {
+  color: rgba(45, 42, 38, 0.8);
+  font-style: italic;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  border-left: 2px solid var(--color-secundario);
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.texto-sobre {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.625;
+  max-width: 42rem;
+}
+.texto-sobre p {
+  margin: 0 0 1.5rem 0;
+}
+
+.texto-sobre p:last-child {
+  margin-bottom: 0;
+}
+.col-izq-sobre {
+  grid-column: span 5;
+}
+.col-der-sobre {
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 1rem;
+  height: 100%;
+}
+.contenedor-imagen {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.imagen-estudio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85) contrast(1.02);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 
@@ -18,11 +104,6 @@
   border-bottom: 1px solid #e5e7eb;
 }
 
-.contenedor-seccion {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
 .cuadricula {
   display: grid;
@@ -40,7 +121,16 @@
 }
 
 /* Responsividad para móviles y tabletas */
-
+@media (max-width: 840px) {
+  .cuadricula {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .col-span-5,
+  .col-span-7 {
+    grid-column: span 1;
+  }
+}
 
 .sobre-nosotros-img-box {
   width: 100%;
@@ -94,7 +184,7 @@
   font-size: 2.1rem;
   font-weight: 700;
   line-height: 1.25;
-  color: #111827;
+  color: white;
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
 }
@@ -103,7 +193,7 @@
 .sobre-nosotros-texto p {
   font-size: 1rem;
   line-height: 1.7;
-  color: #4b5563;
+  color: white;
   margin-bottom: 1.25rem;
 }
 

@@ -99,7 +99,7 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', vincularCatalogoADetalle);
+    (function(callback) { callback.call(document, new Event('DOMContentLoaded')); })( vincularCatalogoADetalle);
   } else {
     vincularCatalogoADetalle();
   }
