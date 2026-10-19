@@ -1,0 +1,30 @@
+[
+  {
+    "id": "mega-duper-panel-solar-1",
+    "nombre": "paputspanel",
+    "imagen": "imagenes/mega-duper-panel-solar.jpg",
+    "precio": "10.000,000",
+    "descripcion": "gran panel solar con: 4 tipos diferentes de plegado, buena produccion de energia, el mejor que encontrarás papu Bv."
+  },
+  {
+    "id": "paputs-panel-2",
+    "nombre": "mega-panel.",
+    "imagen": "imagenes/paputs-panel-2-7412495c.jpeg",
+    "precio": "$ 10,000,000",
+    "descripcion": "si no existieran los paneles solares, este fuera sin duda el unico eh inigualable p[anel solar PRIME."
+  },
+  {
+    "id": "panel-city-boy-3",
+    "nombre": "Xrt-8",
+    "imagen": "imagenes/panel-city-boy.png",
+    "precio": "2.000.000",
+    "descripcion": "Es un producto bastante popular, tipo osea todo el mundo lo quiere, lo necesitas en verdad, su gran adaptabilidasd al ambiente lo hacen unico."
+  },
+  {
+    "nombre": "Chupamegasol",
+    "precio": "5,000,000",
+    "descripcion": "panel solar bastante grande, tambien amplio con gran xapacidad de energia a la vez que la transforma.",
+    "id": "chupamegasol-1",
+    "imagen": "imagenes/chupamegasol-1-73bb6f48.jpg"
+  }
+]

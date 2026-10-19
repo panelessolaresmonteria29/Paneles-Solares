@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mega-duper-panel-solar-1",
+    "nombre": "mega duper panel solar",
+    "imagen": "imagenes/mega-duper-panel-solar.jpg",
+    "precio": "$ 1,000,0000",
+    "descripcion": "gran panel solar con: 4 tipos diferentes de plegado, buena produccion de energia, el mejor que encontrarás papu Bv."
+  },
+  {
+    "id": "paputs-panel-2",
+    "nombre": "paputs panel",
+    "imagen": "imagenes/paputs-panel.gif",
+    "precio": "$ 50,000",
+    "descripcion": "si no existieran los paneles solares, este fuera sin duda el unico."
+  },
+  {
+    "id": "panel-city-boy-3",
+    "nombre": "panel city boy",
+    "imagen": "imagenes/panel-city-boy.png",
+    "precio": "67,0000",
+    "descripcion": "Es un producto bastante popular, tipo osea todo el mundo lo quiere, si quieres cómpralo, no todas las personas lo pueden comprar :vvvv 6767676767"
+  }
+]

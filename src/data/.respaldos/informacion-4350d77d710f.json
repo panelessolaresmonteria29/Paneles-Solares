@@ -1,0 +1,12 @@
+{
+  "nombre": "Proyecto Svelte",
+  "telefono": "+52 55 1234 5678",
+  "whatsapp": "525512345678",
+  "email": "contacto@tiendaescolar.com",
+  "direccion": "Av. Principal #123, Ciudad Escolar",
+  "horario": "Lunes a Viernes: 9:00 AM - 7:00 PM",
+  "redesSociales": {
+    "instagram": "@tiendaescolar",
+    "facebook": "facebook.com/tiendaescolar"
+  }
+}
