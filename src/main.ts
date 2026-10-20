@@ -1,3 +1,4 @@
+import './styles/fonts.css';
 import App from './App.svelte';
 import './styles/variables.css';
 import './pages/catalogo/catalogo.css';
